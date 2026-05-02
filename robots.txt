@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://medardkoudigue.dev/sitemap.xml
+
+# Crawl delay (optional, pour ne pas surcharger)
+Crawl-delay: 10
+
+# Disallow private or temporary files
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /tmp/

@@ -1,0 +1,38 @@
+{
+  "name": "Médard Koudigue — Portfolio",
+  "short_name": "MedFolio",
+  "description": "Portfolio de Médard Koudigue, développeur mobile Flutter, web et designer UI/UX. Cofondateur de Digital Vision.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#FFE600",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["portfolio", "business", "technology"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Mes Projets",
+      "url": "/#projets",
+      "description": "Voir mes projets web et mobile"
+    },
+    {
+      "name": "Me Contacter",
+      "url": "/#contact",
+      "description": "Envoyer un message à Médard"
+    }
+  ]
+}

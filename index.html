@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Médard Koudigue — Développeur Mobile Flutter, Web & Designer UI/UX</title>
+    <meta name="description"
+        content="Portfolio de Médard Koudigue, développeur mobile Flutter, développeur web (HTML5, CSS3, JavaScript) et designer UI/UX basé à Baguida, Togo. Cofondateur de Digital Vision.">
+    <meta name="keywords"
+        content="Médard Koudigue, développeur Flutter, développeur mobile Togo, développeur web Togo, designer UI UX, Digital Vision, HTML5, CSS3, JavaScript, WordPress, portfolio">
+    <meta name="author" content="Médard Koudigue">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://medardkoudigue.dev/">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Médard Koudigue — Développeur Mobile, Web & Designer UI/UX">
+    <meta property="og:description"
+        content="Développeur mobile Flutter, web et designer UI/UX. Cofondateur de Digital Vision. Basé au Togo.">
+    <meta property="og:url" content="https://medardkoudigue.dev/">
+    <meta property="og:locale" content="fr_FR">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Médard Koudigue — Portfolio">
+    <meta name="twitter:description"
+        content="Développeur mobile Flutter, web et designer UI/UX. Cofondateur de Digital Vision.">
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Médard Koudigue",
+      "jobTitle": "Développeur Mobile Flutter, Web & Designer UI/UX",
+      "email": "medkoudigue@gmail.com",
+      "telephone": "+22897148251",
+      "address": { "@type": "PostalAddress", "addressLocality": "Baguida", "addressCountry": "TG" },
+      "sameAs": [
+        "https://github.com/medard2004",
+        "https://www.instagram.com/medkoudigue/",
+        "https://web.facebook.com/profile.php?id=100080081396415",
+        "https://www.tiktok.com/@medardkoudigue"
+      ]
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&family=Lato:wght@300;400;700&family=Poppins:wght@400;500;600;700;800&family=Bebas+Neue&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#FFE600">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Scroll progress -->
+    <div id="scrollProgress"></div>
+    <!-- Particles background -->
+    <div id="particles"></div>
+    <!-- Custom cursor -->
+    <div id="cursor"></div>
+    <div id="cursorDot"></div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <img src="images/logotete.png" alt="Logo" style="width: 45px; height: 45px; object-fit: contain; margin-top: -5px;">
+            <span>MedFolio</span>
+        </div>
+
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#digital-vision">Digital Vision</a></li>
+            <li><a href="#experience">Expérience</a></li>
+            <li><a href="#contact" class="nav-cta">Me Contacter</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-label">Développeur Mobile, Web & Designer UI/UX</div>
+            <h1 class="hero-name">
+                <span class="name-first">MÉDARD</span>
+                <span class="name-last">KOUDIGUE</span>
+            </h1>
+            <div class="hero-separator">
+                <div class="hero-separator-dot"></div>
+            </div>
+            <p class="hero-description">
+                Je crée des <span class="highlight">expériences mobiles &amp; web</span> exceptionnelles alliant <span
+                    class="highlight">performance technique</span> et <span class="highlight">design raffiné</span>
+            </p>
+            <div class="hero-buttons">
+                <a href="#projets" class="btn btn-primary">
+                    <span>Découvrir mes projets</span>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Entrer en contact</span>
+                </a>
+            </div>
+        </div>
+        <br><br>
+        <div class="scroll-indicator">
+            <span class="scroll-text">Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Profil Section -->
+    <section class="section profil" id="profil">
+        <div class="section-header">
+            <div class="section-label">À Propos</div>
+            <h2 class="section-title">Profil</h2>
+        </div>
+
+        <div class="profil-content">
+            <div class="profil-image-wrapper">
+                <div class="profil-image-container">
+                    <img src="images/medardtof.jpg" alt="Médard Koudigue" class="profil-image">
+                </div>
+                <div class="profil-social">
+                    <a href="https://github.com/medard2004" target="_blank" rel="noopener" class="social-icon"
+                        aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://web.facebook.com/profile.php?id=100080081396415" target="_blank" rel="noopener"
+                        class="social-icon" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/medkoudigue/" target="_blank" rel="noopener" class="social-icon"
+                        aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@medardkoudigue" target="_blank" rel="noopener" class="social-icon"
+                        aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="profil-text">
+                <p class="profil-description">
+                    Développeur mobile et web orienté résultats, avec une double expertise en Flutter et en
+                    développement web (HTML5, CSS3, JavaScript). Je conçois et déploie des solutions numériques fiables,
+                    élégantes et centrées utilisateur.
+                </p>
+                <p class="profil-description">
+                    Capable de transformer une idée en produit fonctionnel — application mobile ou site web — je combine
+                    logique technique et sens esthétique pour livrer des expériences digitales à forte valeur ajoutée.
+                </p>
+
+                <div class="profil-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Années d'expérience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Projets livrés</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Satisfaction client</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétences Section -->
+    <section class="section competences" id="competences">
+        <div class="section-header">
+            <div class="section-label">Expertise</div>
+            <h2 class="section-title">Compétences</h2>
+        </div>
+
+        <div class="competences-grid">
+            <div class="competence-card">
+                <div class="competence-header">
+                    <div class="competence-icon"><i class="fas fa-code"></i></div>
+                    <h3 class="competence-title">Développement</h3>
+                </div>
+                <ul class="competence-list">
+                    <li>Flutter & Dart</li>
+                    <li>HTML / CSS / JavaScript</li>
+                    <li>Firebase & Cloud Services</li>
+                    <li>MySQL & Bases de données</li>
+                    <li>API REST & Intégration</li>
+                    <li>Git & Version Control</li>
+                </ul>
+            </div>
+
+            <div class="competence-card">
+                <div class="competence-header">
+                    <div class="competence-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3 class="competence-title">Design & UI/UX</h3>
+                </div>
+                <ul class="competence-list">
+                    <li>Figma & Prototypage</li>
+                    <li>Adobe Creative Suite</li>
+                    <li>Design System</li>
+                    <li>Material Design</li>
+                    <li>Responsive Design</li>
+                    <li>User Research & Testing</li>
+                </ul>
+            </div>
+
+            <div class="competence-card">
+                <div class="competence-header">
+                    <div class="competence-icon"><i class="fas fa-rocket"></i></div>
+                    <h3 class="competence-title">Outils & IA</h3>
+                </div>
+                <ul class="competence-list">
+                    <li>ChatGPT & IA générative</li>
+                    <li>Midjourney & Canva</li>
+                    <li>VS Code & Cursor</li>
+                    <li>Notion & Documentation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets Section -->
+    <section class="section projets" id="projets">
+        <div class="section-header">
+            <div class="section-label">Réalisations</div>
+            <h2 class="section-title">Projets</h2>
+        </div>
+
+        <div class="projets-grid">
+            <!-- Développement Mobile -->
+            <div class="projet-card">
+                <div class="projet-image"><i class="fas fa-mobile-alt"></i></div>
+                <div class="projet-content">
+                    <h3 class="projet-title">Développement Mobile</h3>
+                    <p class="projet-description">
+                        Applications mobiles Flutter performantes avec des interfaces modernes, animations fluides et
+                        architecture scalable.
+                    </p>
+                    <div class="projet-tags">
+                        <span class="projet-tag">Flutter</span>
+                        <span class="projet-tag">Firebase</span>
+                        <span class="projet-tag">UI/UX</span>
+                    </div>
+                    <a href="#" class="projet-link" onclick="openMobileGallery(event)">
+                        <span>Voir les projets</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Développement Web -->
+            <div class="projet-card">
+                <div class="projet-image"><i class="fas fa-globe"></i></div>
+                <div class="projet-content">
+                    <h3 class="projet-title">Développement Web</h3>
+                    <p class="projet-description">
+                        Sites web responsive, applications web modernes et plateformes interactives avec design élégant
+                        et code optimisé.
+                    </p>
+                    <div class="projet-tags">
+                        <span class="projet-tag">HTML/CSS</span>
+                        <span class="projet-tag">JavaScript</span>
+                        <span class="projet-tag">Responsive</span>
+                    </div>
+                    <a href="#" class="projet-link" onclick="openWebGallery(event)">
+                        <span>Voir les projets</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Créations Graphiques -->
+            <div class="projet-card">
+                <div class="projet-image"><i class="fas fa-palette"></i></div>
+                <div class="projet-content">
+                    <h3 class="projet-title">Créations Graphiques</h3>
+                    <p class="projet-description">
+                        Designs visuels captivants : logos, affiches, flyers, mockups et identités visuelles qui
+                        racontent une histoire unique.
+                    </p>
+                    <div class="projet-tags">
+                        <span class="projet-tag">Photoshop</span>
+                        <span class="projet-tag">Illustrator</span>
+                        <span class="projet-tag">Canva</span>
+                    </div>
+                    <a href="#" class="projet-link" onclick="openGraphicGallery(event)">
+                        <span>Voir les créations</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Montage Vidéo -->
+            <div class="projet-card">
+                <div class="projet-image"><i class="fas fa-film"></i></div>
+                <div class="projet-content">
+                    <h3 class="projet-title">Montage Vidéo</h3>
+                    <p class="projet-description">
+                        Montages vidéo créatifs, animations dynamiques et contenus visuels engageants pour réseaux
+                        sociaux et publicité.
+                    </p>
+                    <div class="projet-tags">
+                        <span class="projet-tag">Premiere Pro</span>
+                        <span class="projet-tag">After Effects</span>
+                        <span class="projet-tag">CapCut</span>
+                    </div>
+                    <a href="#" class="projet-link" onclick="openVideoGallery(event)">
+                        <span>Voir les vidéos</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expérience Section -->
+
+    <!-- Digital Vision Section -->
+    <section class="section digital-vision" id="digital-vision" data-animate>
+
+        <div class="dv-container">
+            <div class="dv-badge-wrap" data-animate-child>
+                <img src="images/logo_digitalVision.png" alt="Digital Vision Logo"
+                    style="width: 140px; height: auto; object-fit: contain; margin-bottom: 0.5rem;">
+                <div class="dv-badge">Cofondateur</div>
+            </div>
+            <div class="dv-content" data-animate-child>
+                <h3 class="dv-title">Cofondateur &amp; Développeur</h3>
+                <p class="dv-subtitle">Digital Vision — Agence digitale &amp; Start-up technologique • Togo</p>
+                <p class="dv-description">
+                    Digital Vision est une start-up fondée avec mon équipe, dédiée à la création de solutions numériques
+                    innovantes pour les entreprises et entrepreneurs africains.
+                    Nous proposons du développement d'applications mobiles, de sites web, du design graphique et de la
+                    stratégie digitale.
+                </p>
+                <div class="dv-services">
+                    <div class="dv-service-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Apps Mobiles</span>
+                    </div>
+                    <div class="dv-service-item">
+                        <i class="fas fa-globe"></i>
+                        <span>Sites Web</span>
+                    </div>
+                    <div class="dv-service-item">
+                        <i class="fas fa-palette"></i>
+                        <span>Design Graphique</span>
+                    </div>
+                    <div class="dv-service-item">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Stratégie Digitale</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section experience" id="experience">
+        <div class="section-header">
+            <div class="section-label">Parcours</div>
+            <h2 class="section-title">Expérience</h2>
+        </div>
+
+        <div class="experience-timeline">
+            <div class="experience-item">
+                <div class="experience-period">Septembre 2023 – Septembre 2024</div>
+                <h3 class="experience-title">Développeur Web &amp; Mobile</h3>
+                <p class="experience-company">Cabinet Dtech</p>
+                <p class="experience-description">
+                    Conception et déploiement de solutions numériques — applications mobiles Flutter et sites web — pour
+                    des clients variés.
+                </p>
+                <ul class="experience-achievements">
+                    <li>Conception et développement d’applications mobiles performantes avec Flutter</li>
+                    <li>Développement d’interfaces web avec HTML5, CSS3 et JavaScript</li>
+                    <li>Réalisation de sites web dynamiques sous WordPress</li>
+                    <li>Création d’interfaces UI/UX modernes et intuitives</li>
+                    <li>Veille technologique continue et amélioration des performances applicatives</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formation Section -->
+    <section class="section formation" id="formation">
+        <div class="section-header">
+            <div class="section-label">Éducation</div>
+            <h2 class="section-title">Formation</h2>
+        </div>
+
+        <div class="formation-grid">
+            <div class="formation-card">
+                <div class="formation-header">
+                    <div class="formation-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="formation-info">
+                        <h3>Formation en Graphisme, Développement Web &amp; Mobile</h3>
+                        <p class="formation-school">Formation professionnelle spécialisée</p>
+                        <div class="formation-period">Cursus complet</div>
+                    </div>
+                </div>
+                <p class="formation-description">
+                    Développement d'applications mobiles (Flutter), création de sites web (HTML5, CSS3, JavaScript),
+                    bases de données et structuration backend, design graphique et conception UI/UX appliquée aux
+                    produits digitaux.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Langues & Intérêts -->
+    <section class="section extras">
+        <div class="extras-grid">
+            <div class="extras-section">
+                <h3>Langues</h3>
+
+                <div class="language-item">
+                    <div class="language-header">
+                        <span class="language-name">Ewé</span>
+                        <span class="language-level">Langue maternelle</span>
+                    </div>
+                    <div class="language-bar">
+                        <div class="language-progress" style="width: 0%" data-width="100"></div>
+                    </div>
+                </div>
+
+                <div class="language-item">
+                    <div class="language-header">
+                        <span class="language-name">Français</span>
+                        <span class="language-level">Natif</span>
+                    </div>
+                    <div class="language-bar">
+                        <div class="language-progress" style="width: 0%" data-width="100"></div>
+                    </div>
+                </div>
+
+                <div class="language-item">
+                    <div class="language-header">
+                        <span class="language-name">Anglais</span>
+                        <span class="language-level">Courant</span>
+                    </div>
+                    <div class="language-bar">
+                        <div class="language-progress" style="width: 0%" data-width="85"></div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="extras-section">
+                <h3>Intérêts</h3>
+
+                <div class="interests-grid">
+                    <div class="interest-item">
+                        <div class="interest-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <span class="interest-name">Technologies mobiles</span>
+                    </div>
+
+                    <div class="interest-item">
+                        <div class="interest-icon"><i class="fas fa-paint-brush"></i></div>
+                        <span class="interest-name">Design d'interfaces</span>
+                    </div>
+
+                    <div class="interest-item">
+                        <div class="interest-icon"><i class="fas fa-globe"></i></div>
+                        <span class="interest-name">Développement web</span>
+                    </div>
+
+                    <div class="interest-item">
+                        <div class="interest-icon"><i class="fas fa-pen-nib"></i></div>
+                        <span class="interest-name">Création graphique</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-label">CONTACT</div>
+        <h2 class="contact-title">Travaillons Ensemble</h2>
+        <p class="contact-description">
+            Vous avez un projet en tête ? Discutons de la façon dont je peux vous aider à créer une expérience mobile ou
+            web exceptionnelle.
+        </p>
+
+        <a href="#" class="contact-button" onclick="openWhatsAppModal(event)">
+            <span>Démarrer un projet</span>
+            <span><i class="fab fa-whatsapp"></i></span>
+        </a>
+
+        <div class="contact-info">
+            <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-paper-plane"></i></div>
+                <span class="contact-text">medkoudigue@gmail.com</span>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-mobile-alt"></i></div>
+                <span class="contact-text">+228 97 14 82 51</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal WhatsApp Form -->
+    <div class="modal" id="whatsappModal">
+        <div class="modal-content" style="max-width: 500px;">
+            <div class="modal-header">
+                <h3 class="modal-title">Démarrer un projet</h3>
+                <button class="modal-close" onclick="closeWhatsAppModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <form id="whatsappForm" onsubmit="sendWhatsAppMessage(event)"
+                    style="display: flex; flex-direction: column; gap: 1.5rem; padding-top: 1rem;">
+                    <div>
+                        <label for="waName"
+                            style="display: block; margin-bottom: 0.5rem; color: var(--text-light); font-weight: 500;">Votre
+                            nom</label>
+                        <input type="text" id="waName" required
+                            style="width: 100%; padding: 0.8rem 1rem; border-radius: 8px; border: 1px solid var(--border-color); background: rgba(255,255,255,0.05); color: white; font-family: var(--font-poppins);">
+                    </div>
+                    <div>
+                        <label for="waProject"
+                            style="display: block; margin-bottom: 0.5rem; color: var(--text-light); font-weight: 500;">Type
+                            de projet</label>
+                        <select id="waProject" required
+                            style="width: 100%; padding: 0.8rem 1rem; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-darker); color: white; font-family: var(--font-poppins);">
+                            <option value="">Sélectionnez une option</option>
+                            <option value="Application Mobile">Application Mobile</option>
+                            <option value="Site Web">Site Web</option>
+                            <option value="Design UI/UX">Design UI/UX</option>
+                            <option value="Création Graphique">Création Graphique</option>
+                            <option value="Autre">Autre</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="waMessage"
+                            style="display: block; margin-bottom: 0.5rem; color: var(--text-light); font-weight: 500;">Description
+                            du projet</label>
+                        <textarea id="waMessage" rows="4" required
+                            style="width: 100%; padding: 0.8rem 1rem; border-radius: 8px; border: 1px solid var(--border-color); background: rgba(255,255,255,0.05); color: white; font-family: var(--font-poppins); resize: vertical;"></textarea>
+                    </div>
+                    <button type="submit" class="contact-button"
+                        style="border: none; cursor: pointer; width: 100%; justify-content: center; margin-top: 0.5rem; font-size: 1rem;">
+                        <span>Envoyer sur WhatsApp</span>
+                        <span><i class="fab fa-whatsapp"></i></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Galerie Mobile -->
+    <div class="modal" id="mobileGalleryModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Projets Mobile</h3>
+                <button class="modal-close" onclick="closeMobileGallery()">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="gallery-grid" id="mobileGalleryGrid">
+                    <!-- Les images seront insérées ici par JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Galerie Web -->
+    <div class="modal" id="webGalleryModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Projets Web</h3>
+                <button class="modal-close" onclick="closeWebGallery()">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="gallery-grid" id="webGalleryGrid">
+                    <!-- Les images seront insérées ici par JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Galerie Graphique -->
+    <div class="modal" id="graphicGalleryModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Créations Graphiques</h3>
+                <button class="modal-close" onclick="closeGraphicGallery()">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="gallery-grid" id="graphicGalleryGrid">
+                    <!-- Les images seront insérées ici par JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Galerie Vidéo -->
+    <div class="modal" id="videoGalleryModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Montages Vidéo</h3>
+                <button class="modal-close" onclick="closeVideoGallery()">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="gallery-grid" id="videoGalleryGrid">
+                    <!-- Les vidéos seront insérées ici par JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image/Video Viewer Modal -->
+    <div class="image-viewer" id="imageViewer">
+        <button class="image-viewer-close" onclick="closeImageViewer()">×</button>
+        <button class="image-nav prev" onclick="prevImage()">‹</button>
+        <div class="image-viewer-content">
+            <img id="viewerImage" src="" alt="" style="display:none;">
+            <video id="viewerVideo" controls style="display:none; max-width: 100%; max-height: 95vh;"></video>
+        </div>
+        <button class="image-nav next" onclick="nextImage()">›</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>MÉDARD</h3>
+                <p class="footer-description">
+                    Développeur Mobile Flutter, Web & Designer UI/UX passionné par la création d'expériences digitales
+                    exceptionnelles.
+                </p>
+                <p class="footer-copyright">© 2026 Médard Koudigue. Tous droits réservés.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="#profil">Profil</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#experience">Expérience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Réseaux Sociaux</h4>
+                <div class="footer-social">
+                    <a href="https://github.com/medard2004" target="_blank" rel="noopener" class="footer-social-link"
+                        aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://web.facebook.com/profile.php?id=100080081396415" target="_blank" rel="noopener"
+                        class="footer-social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/medkoudigue/" target="_blank" rel="noopener"
+                        class="footer-social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@medardkoudigue" target="_blank" rel="noopener"
+                        class="footer-social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="footer-credit">Designed & Developed with <span class="heart"><i class="fas fa-heart"></i></span>
+                by Médard Koudigue</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
