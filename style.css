@@ -1571,11 +1571,11 @@ footer {
 
 @media (max-width: 992px) {
     .nav-menu {
-        position: fixed;
-        top: 70px;
+        position: absolute;
+        top: 100%;
         left: -100%;
         width: 100%;
-        height: calc(100vh - 70px);
+        height: 100vh;
         background: var(--bg-darker);
         flex-direction: column;
         justify-content: flex-start;
@@ -1700,25 +1700,177 @@ footer {
     .image-nav.next {
         right: 1rem;
     }
+    
+    .dv-container { flex-direction: column; align-items: center; gap: 2rem; text-align: center; }
+    .dv-services { justify-content: center; }
 }
 
 @media (max-width: 480px) {
+    .section {
+        padding: 3rem 5%;
+    }
+    
+    .hero {
+        padding: 6rem 5% 3rem;
+    }
+    
+    .hero-name {
+        font-size: clamp(2.5rem, 12vw, 3.5rem);
+        margin-bottom: 1rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    .hero-label {
+        font-size: 0.8rem;
+        padding: 0.4rem 1rem;
+    }
+
     .hero-buttons {
         flex-direction: column;
         width: 100%;
+        gap: 1rem;
     }
     
     .btn {
         width: 100%;
         justify-content: center;
+        padding: 1rem 1.5rem;
     }
     
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .profil-image-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .profil-social {
+        gap: 0.8rem;
+    }
+    
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
     .competences-grid {
         grid-template-columns: 1fr;
     }
-    
+
+    .competence-card {
+        padding: 1.5rem;
+    }
+
     .projets-grid {
         grid-template-columns: 1fr;
+    }
+
+    .projet-card {
+        margin: 0;
+    }
+
+    .projet-image {
+        height: 200px;
+    }
+
+    .projet-content {
+        padding: 1.5rem;
+    }
+
+    .projet-title {
+        font-size: 1.3rem;
+    }
+
+    .dv-container {
+        gap: 1.5rem;
+    }
+
+    .dv-badge-wrap img {
+        width: 110px !important;
+    }
+
+    .dv-title {
+        font-size: 1.5rem;
+    }
+
+    .dv-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .experience-timeline {
+        padding-left: 20px;
+    }
+
+    .experience-timeline::before {
+        left: 5px;
+    }
+
+    .experience-item {
+        padding: 1.5rem;
+    }
+
+    .experience-item::before {
+        left: -23px;
+        width: 14px;
+        height: 14px;
+    }
+
+    .formation-card {
+        padding: 1.5rem;
+    }
+
+    .formation-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .formation-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.8rem;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+    }
+
+    .contact-button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-content {
+        gap: 2rem;
+    }
+
+    .footer-about h3 {
+        font-size: 1.3rem;
+    }
+
+    .modal-header {
+        padding: 1.5rem;
+    }
+
+    .modal-title {
+        font-size: 1.5rem;
+    }
+
+    .modal-body {
+        padding: 1.5rem;
+    }
+
+    .gallery-item img {
+        height: 220px;
     }
 }
 .heart i { color: #e74c3c; }
@@ -1796,14 +1948,31 @@ body:has(button:hover) #cursor { width: 56px; height: 56px; border-color: #fff; 
 [data-animate-child] + [data-animate-child] { transition-delay: 0.4s; }
 [data-animate].visible [data-animate-child] { opacity: 1; transform: translateX(0); }
 
-/* Typing cursor blink */
+/* Pulsing Glowing Dot au lieu du curseur | */
 .hero-name::after {
-    content: '|';
-    color: var(--primary-yellow);
-    animation: blink 0.8s step-end infinite;
-    margin-left: 4px;
+    content: '';
+    display: inline-block;
+    width: clamp(12px, 2vw, 18px);
+    height: clamp(12px, 2vw, 18px);
+    background-color: var(--primary-yellow);
+    border-radius: 50%;
+    margin-left: 15px;
+    box-shadow: 0 0 15px var(--primary-yellow), 0 0 30px var(--primary-yellow);
+    animation: pulseDotName 2s ease-in-out infinite;
 }
-@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+@keyframes pulseDotName {
+    0%, 100% { 
+        transform: scale(0.8); 
+        opacity: 0.6; 
+        box-shadow: 0 0 10px rgba(255, 230, 0, 0.2); 
+    }
+    50% { 
+        transform: scale(1.1); 
+        opacity: 1; 
+        box-shadow: 0 0 20px var(--primary-yellow), 0 0 40px var(--primary-yellow); 
+    }
+}
 
 /* Tilt card effect (JS) */
 .projet-card { transform-style: preserve-3d; will-change: transform; }
@@ -1951,7 +2120,4 @@ body:has(button:hover) #cursor { width: 56px; height: 56px; border-color: #fff; 
 }
 .dv-service-item i { color: var(--primary-yellow); font-size: 0.9rem; }
 
-@media (max-width: 768px) {
-    .dv-container { flex-direction: column; align-items: center; gap: 2rem; text-align: center; }
-    .dv-services { justify-content: center; }
-}
+
